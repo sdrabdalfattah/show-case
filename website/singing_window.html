@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="1.css">
+    <link rel="icon" type="image/x-icon" href="trade DZ.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP - sign in</title>
+</head>
+<body class="signing_page">
+<div class="signing_container" id="signing_container" style="display: none;">
+        <h1>welcome again!</h1>
+        <h3 id="knower"></h3>
+        <input class="signing_container_input" type="email" name="" id="email_input" placeholder="your username here">
+        <input class="signing_container_input" type="password" name="" id="password_input" placeholder="your password here">
+        
+      
+            
+            
+            
+            
+
+        <h4>dont have a account ? <span id="span_switcher">click here</span></h4>
+
+
+
+<div class="signing_container_btns">
+        <div class="back_to_home" id="back" href="1.html"><i class="fa-solid fa-house"></i> back to home</div>
+        <div class="enter" id="submit" href="1.html"> enter <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </div>
+    </div>
+
+
+
+    <div class="signing_container" id="signing_container_new">
+        <h1>enjoy with our community</h1>
+        <h3 id="knower_new"></h3>
+        <input class="signing_container_input" type="email" name="" id="username_input" placeholder="your username here">
+        <input class="signing_container_input" type="email" name="" id="name_input" placeholder="your name here">
+        <input class="signing_container_input" type="email" name="" id="passworrd_input" placeholder="your password here">
+       
+        
+        <div style="flex-direction: column; display: flex;align-items: center;justify-content: space-evenly;">
+
+
+                <span style="font-size: 20px; margin-block: 10px;">add your image here :</span>
+        <div class="image-uploader">
+                <input type="file" id="imageInput_new" class="file-input" accept="image/*" />
+                <label for="imageInput_new" class="image-label">
+                  <img id="previewImage_new" src="placeholder.jpg" />
+                </label>
+              </div>
+
+            
+            </div>
+            
+            
+
+        <h4>already have a account ? <span id="span_new_switcher">click here</span></h4>
+
+
+
+<div class="signing_container_btns">
+        <div class="back_to_home" id="back" ><i class="fa-solid fa-house"></i> back to home</div>
+        <div class="enter" id="submit_new" > enter <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        </div>
+    </div>
+
+
+
+    <script src="singing_window.js"></script>
+    <script src="post_rev.js"></script>
+    <script src="1.js"></script>
+    <script src="axios.js"></script>
+</body>
+</html>

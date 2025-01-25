@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="trade DZ.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trip - home (not signed)</title>
+</head>
+<body>
+<header>
+    <div class="logged_in_youser" id="logged_in_youser">
+    <div class="adding" id="add_btn">add post <i class="fa-solid fa-plus"></i></div>
+    <img src="" id="header_pfp_img" alt="">
+    <div onclick="go_user_pf()" class="profile_btn"><i class="fa-solid fa-user"></i></div>
+    <div class="log_out_btn" id="log_out_btn"><i class="fa-solid fa-right-from-bracket"></i></div>
+</div>
+    <button class="rejisting" id="rejisting">register / log in</button>
+</header>
+<div class="posts_container" id="posts_container">
+    <div class="post_container" id="post_container">
+     <div class="post_header">
+      <img src="" id="user_img" alt="">
+      
+      <h1 id="text_name"></h1>
+
+      <div class="post_header_btns" id="post_header_btns">
+        <h5 style="font-weight: 300; color: rgb(163, 163, 163);">(your post)</h5>
+        <button onclick="edit_post()">edit</button>
+        <button id="delete_btn" onclick="fgf()">delete</button>
+      </div>
+     </div>
+
+    <div id="post_body" onclick="postshow()">
+     <h2 style=" word-wrap: break-word;overflow-wrap: break-word;"></h2>
+      <img class="post_img" src="" aria-placeholder="" onclick="show_user_pf()">
+
+      <button id="comments_btn" class="comments_btn">comments <i class="fa-solid fa-comment"></i> (<span>--</span>)</button>
+    </div>
+</div>
+</div>
+<div class="adding_container" id="adding_container">
+    <div class="adding_container_params">
+        <h2>add your content here :</h2>
+        <textarea id="text_eria"></textarea>
+        <h2>add your image here :</h2>
+        <div class="image-upload-container" id="imageUploadContainer">
+            <i class="fa-solid fa-image"></i>
+        </div>
+    
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+        <div class="adding_btns">
+            <button class="cancel" id="cancel">cancel</button>
+            <button class="add" id="add">add</button>
+        </div>
+    </div>
+</div>
+
+<div class="adding_container" id="editing_container">
+    <div class="adding_container_params">
+        <h2>edit your post :</h2>
+        <textarea id="text_eria_edit"  placeholder="edit here"></textarea>
+          <div class="editing_btns">
+            <button class="cancel" id="cancel2">cancel</button>
+            <button class="add" id="last_edit">edit</button>
+        </div>
+        </div>
+    </div>
+
+    <div class="adding_container" id="deleting_container">
+        <div class="adding_container_params">
+            <h2>delete your post ?</h2>
+              <div class="editing_btns" style="margin-top: 60px;">
+                <button class="cancel" id="cancel3">cancel</button>
+                <button class="add" id="last_delete">delete</button>
+            </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<script src="post_rev.js"></script>
+<script src="1.js"></script>
+<script src="axios.js"></script>
+</body>
+</html>
+
+
