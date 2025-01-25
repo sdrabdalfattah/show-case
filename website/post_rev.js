@@ -22,6 +22,7 @@ function getPost() {
         commentsContent += `
            <img src="${comment.author.profile_image}" alt="">
            <h3>${comment.author.username} <i style="color:green;" class="fa-solid fa-arrow-right"></i> ${comment.body}</h3>
+              <hr style="margin-top: 10px; border:1px grey solid;">
         `;
       }
 
